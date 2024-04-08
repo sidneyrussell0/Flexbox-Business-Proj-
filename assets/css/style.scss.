@@ -1,0 +1,252 @@
+---
+---
+
+html {
+    font-size: 16px;
+    font-family: "Noto Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    
+}
+
+body {
+    background-color: #D0C6B9;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    background-color: rgb(186 160 125 / 50%);
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 60px;
+    margin: 15px auto;
+}
+
+p {
+    text-align: center;
+}
+
+.noto-serif display-text {
+    font-family: "Noto Serif Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.zeyada-regular {
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+
+/*header*/
+
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    font-weight: bold;
+    font-size: 3rem;
+    background-color: #B39C7D;
+    background-position: center;
+    width: fit-content;
+    height: 4rem;
+    padding: 7px;
+    font-family: "Zeyada", cursive;
+    font-style: normal;
+}
+
+/*nav*/
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    padding: 10px 20px;
+
+}
+
+.nav-list {
+    font-style: italic;
+    font-size: 1.25rem;
+    display: flex;
+    list-style: none;
+    text-align: left;
+    background: rgb(186 160 125 / 50%);
+    padding: 5px 100px 5px 100px;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+a:link {
+    text-decoration-color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration-color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: purple;
+}
+
+
+
+/*mission statement*/
+
+.mission-container {
+    background-image: url(https://images.pexels.com/photos/6621152/pexels-photo-6621152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 800px;
+    z-index: -10;
+    margin: 0 auto;
+    
+
+}
+
+.mission {
+    background-color: #dac7ab5d;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 30px;
+}
+
+h2 {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+/*products*/
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 800px;
+    text-align: center;
+}
+
+.products {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+.products-container img {
+    height: 250px;
+    width: 250px;
+    margin: 5px 20px;
+}
+
+/*employees*/
+
+.employees-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-basis: 800px;
+}
+
+.employees {
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.employees-container img {
+    height: 300px;
+    width: 240px;
+    margin: 5px 20px;
+}
+
+.name {
+    font-weight: bold;
+    margin-bottom: 1px;
+    line-height: 20%;
+}
+
+
+
+/*footer*/
+
+.footer-container {
+    background: rgb(186 160 125 / 50%);
+    background-position: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 40px 10px 40px;
+
+}
+
+footer {
+    text-align: center;
+}
+
+/*smartphone*/
+@media only screen and (min-width:360px) and (max-width:926px) {
+    html {
+        display: flex;
+    }
+
+    .products-container img {
+        height: 215px;
+        width: 215px;
+    }
+
+    .employees-container img {
+        margin: 0 60px;
+    }
+
+
+}
+
+/*tablet*/
+@media only screen and (min-width:768px) and (max-width:1366px) {
+    .products-container img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .employees-container img {
+        margin: 0 60PX;
+    }
+
+    footer {
+        line-height: 25px;
+    }
+}
