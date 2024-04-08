@@ -16,7 +16,7 @@ ul {
 }
 
 h1 {
-    background: rgb(186 160 125 / 50%);
+    background: rgba(186 160 125 0.5);
     height: fit-content;
     width: fit-content;
     padding: 10px 60px;
